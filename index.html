@@ -1,0 +1,398 @@
+<!DOCTYPE html> <!--Declares the document type as HTML5-->
+<html>
+    <head>
+        <!--Contains meta data and references for the HTML document-->
+        <title>Hextick</title><!--Specifies the title of the document-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="coursework">
+        <meta name="Description" content="HTML Document">
+        <meta name="Keywords" content="HTML">   
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="js/script.js"></script>
+        
+    </head>   
+
+    <body>
+    <header>
+        <!--this is to create a nav bar-->
+        <div class="header">
+            <div class="line"></div> <!--this add a line on the sides of the logo-->
+            <div class="logo">HEXTICK</div>
+            <div class="line"></div>
+
+            <nav class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/HTML/products.html">Products</a>
+                <a href="/HTML/blog.html">Blog</a>
+                <a href="/HTML/research.html">Research</a>
+                <a href="/HTML/aboutUs.html">About Us</a>  
+                <a href="/HTML/form.html">Form</a>    
+            </nav>
+        </div>
+
+            <div id="date-time" class="date-time"></div>
+        </header>
+    
+      
+        <!--this part will show the left side on the home page with the name and description and the learn more option-->
+        <section class="mainpart">
+            <div class="sectioncontent">
+                <div class="contentdetails">
+                    <h3 class="text" style="font-family: Arial, Helvetica, sans-serif">
+                        <span class="timeless">TIMELESS</span><br>
+                        <span class="classics">CLASSICS</span>
+                    </h3>  
+                    
+                    <p class="description">
+                        Discover a Perfect Blend of Timepieces from our very own Collection.
+                    </p>
+                
+
+                <a href="/HTML/products.html" class="get-info-button">LEARN MORE</a>
+                </div>
+
+
+                <div class="image">
+                     <img src="/image/home/blk.jpg" alt="image" class="custom-mainpart-image">
+                </div>
+             </div>
+        </section>
+
+ 
+        <section class="video-part">
+            <video class="video-background" autoplay muted loop>
+                <source src="/image/home/video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+
+        <div class="watches">
+    <!--products detail-->
+   
+        <h1 class="centre heading" style="font-size: 40px; font-family: 'Arial', sans-serif; color: white ; text-transform: uppercase; letter-spacing: 3.2px; font-weight: bold; margin-bottom: 50px;">
+            <a href ="/HTML/products.html" style="color: white; text-decoration: none;">EXPLORE</a>
+        </h1>
+         <div class="container">
+            <!-- first watch on the collection section -->
+            <div class="item">
+                <a href="#hublot"> <!--makes it so when clicked takes you to the required category-->
+                <img src="../image/Hublot/BIG BANG INTEGRATED TOURBILLON FULL CARBON.png" alt="Hublot's TOURBILLON">
+                </a>
+            </div> 
+    
+            <!-- second watch on the collection section -->
+            <div class="item">
+                <a href="#cartier">
+                <img src="../image/Cartier/Santos De Cartier Green.png" alt="Santos De Cartier">
+                </a>
+            </div>
+    
+            <!-- third watch on the collection section -->
+            <div class="item">
+                <a href="#jaeger">
+                <img src="../image/Jaeger-Lecoultre/MASTER GRANDE TRADITION CALIBRE 946.png" alt="Master Grande Tradition Calibre 946">
+                </a>
+            </div>
+    
+            <!-- fourth watch on the collection section -->
+            <div class="item">
+                <a href="#patek">
+                <img src="../image/patek philippe/Patek Philippe 5304_301R-001 black bg.png" alt="NAUTILUS">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--blog overview-->
+    <section class="blogs" id="blogs">
+        <h1 class="heading"><span>Latest</span> News</h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/blog/ai.jpg" alt="" class="image">
+            </div>
+            <div class="content">
+            <a href="#" class="title">AI Imapact</a>
+            <span>/ 22nd January, 2025</span>
+            <p>From the rise of smartwatches to advancements in traditional watchmaking, technology continues to shape consumer preferences and redefine the way we perceive timepieces. Whether through enhanced connectivity, improved durability, or sustainable materials, innovations in watch technology are constantly...</p>
+            <a href="/HTML/blog.html" class="btn"> READ MORE</a>
+            </div>
+
+        <div class="box">
+            <img src="image/blog/retro.jpg" alt="" class="image">
+        </div>
+        <div class="content">
+        <a href="#" class="title">Technological advancements with watch design and sales</a>
+        <span>/ 22nd January, 2025</span>
+        <p>Technology is reshaping the watch industry, from AI-assisted design to blockchain security and e-commerce innovations, revolutionizing both aesthetics and functionality. AI-driven customization allows brands to offer personalized designs, while advanced materials</p>
+        <a href="/HTML/blog.html" class="btn"> READ MORE</a>
+        </div>
+        </div>
+    </section>
+
+
+     <!--research overview-->
+     <section class="research" id="researches">
+        <h1 class="heading"><span>Brainstorming</span> Ideas</h1>
+        <div class="box-container">
+            <div class="box">
+                <img style="display: flex; max-width: 500px; max-height: 500px;" src="./image/research/homepage1.png" alt="research image" class="image">
+            </div>
+            <div class="content">
+            <a href="/HTML/research.html" class="title">Inspiration</a>
+            <p>We researched various established watch companies, where we took some inspiration and started to implement those ideas on our webpage.</p>
+            <a href="/HTML/research.html" class="btn">LEARN IN DETAIL</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--about us overview-->
+    <section class="about" id="about">
+        <h1 class="heading"><span>About</span> Us</h1>
+        <div class="row">
+            <div class="image">
+                <img src="image/blog/goodlooking.jpg" alt="an image">
+            </div>
+            <div class="content">
+                <h2>What makes us special?</h2>
+                <p>Our teams work closely with the official distributers of our collections and find the best possible deals for our customers.</p>
+                <p>We curate the most exiquisite of watches that our customers can find at their fingertips without having to be on a waitlist.</p>
+                <p style="text-transform: uppercase; font-weight: bold;">We never let our customers down!!</p>
+                <a href="/HTML/aboutUs.html" class="btn">MEET OUR TEAM</a>
+                <a href="/HTML/form.html" class="btn">SUBSCRIBE</a>
+            </div>
+        </div>
+         
+    </section>
+
+
+    </body>
+
+    <footer style="color:white" > &copy; 2025 Hextick. All rights reserved.</footer>
+    
+    <style>
+        .mainpart {
+            display: flex; /* makes it so that the size doesnot get messed up */
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 0%;
+            box-shadow: 04px 8px rgba(0, 0 ,0 0.1);
+            max-width: 100%;
+        }
+
+        .sectioncontent {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .contentdetails {
+            flex: 1;
+            padding-right:  20px; /* creates some space between the items */
+            color: black;
+        }
+
+
+        .contentdetails .text {
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px; /* margin is used to create required space */
+            margin-top: -200px;
+            margin-left: 50px;
+        }
+
+        .timeless {
+            display: block;
+            font-size: 50px;
+            margin-bottom: -165px;
+        }
+
+        .classics {
+            display: block;
+            font-size: 45px;
+            margin-top: -5px;
+        }
+
+        .description {
+            display: flex;
+            font-size: 20px;
+            color:  black;
+            text-align: center;
+            margin-left: 50px;
+
+        }
+
+        .get-info-button {
+            font-size: 20px;
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 35px;
+            padding: 10px 20px;
+            color: white;
+            border: 1px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .get-info-button:hover {
+            background-color: grey; /* changes color when you hover over it */
+        }
+
+        .contentdetails .welcometext {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .custom-mainpart-image {
+            width: 70%;
+            height: auto;
+            border-radius: 0%;
+        }
+        .image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-part {
+            position: relative;
+            width: 100%;
+            height: 700px;   
+        }
+
+        .video-background {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .heading{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: black;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 40px;
+            letter-spacing: 3px;
+        }
+        .heading span{
+            color: black;
+            text-transform: uppercase;
+        }
+        .about .row{
+            display: flex;
+            align-items:center;
+            background: white;
+            flex-wrap: wrap;
+        }
+        .about .row .image{
+            display: flex;
+        }
+        .about .row .image img{
+            width: 80%;
+            margin-bottom: 40px;
+            border-radius: 10%;
+        }
+        .about .row .content{
+            flex: 1 1 1px;
+            padding: 10px;
+        }
+        .about .row .content h3{
+            font-size: 16px;
+
+        }
+        .about .row .content p{
+            font-size: 16px;
+            padding: 8px 0;
+            line-height: 1.6;
+            
+        }
+        .btn{
+            font-size: 15px;
+            display: inline-block;
+            margin-top: 2px;
+            margin-left: 5px;
+            padding: 6px 8px;
+            color: white;
+            border: 1px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            
+        }
+        .btn:hover{
+            background-color: grey;
+           
+        }
+
+        .blogs .box-container{
+            display: flex;
+            align-items: center;
+            margin-right: 100px;
+            margin-bottom: 100px;
+            margin-left: 20px;
+            margin-top: 50px;
+            gap: 90px;
+
+        }
+        .blogs .box-container .box{
+            border: 40px;
+
+        }
+        .blogs .box-container .box .image{
+            display: flex;
+            margin-right: 10;
+
+        }
+        .blogs .box-container .box .image{
+            width: 150%;
+            margin-bottom: 10px;
+            border-radius: 10%;
+        }
+        .blogs .box-container .box .content{
+            padding: 50px;
+        }
+        .blogs .box-container .box .content .title{
+            font-size: 25px;
+        }
+        .blogs .box-container .box .content .title:hover{
+           color:gray;
+        }
+        .blogs .box-container .box .content span{
+            padding-top: 50px;
+            font-size: 20px;
+
+        }
+        .blogs .box-container .box .content p{
+            font-size: 16px;
+            line-height: 1.8;
+            color: black;
+            padding: 10px 0;
+        }
+
+        .research .box-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+
+
+</html>
+
+
+
+
