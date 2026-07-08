@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="coursework">
+  <meta name="Description" content="HTML Document">
+  <meta name="Keywords" content="HTML">   
+  <title>HEXTICK</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+    
+  
+<body>
+
+
+  <header>
+    <!--this is to create a nav bar-->
+    <div class="header">
+        <div class="line"></div> <!--this add a line on the sides of the logo-->
+        <div class="logo">HEXTICK</div>
+        <div class="line"></div>
+
+        <nav class="nav-links">
+            <a href="/index.html">Home</a>
+            <a href="/HTML/products.html">Products</a>
+            <a href="/HTML/blog.html">Blog</a>
+            <a href="/HTML/research.html">Research</a>
+            <a href="/HTML/aboutUs.html">About Us</a>  
+            <a href="/HTML/form.html">Form</a>    
+        </nav>
+    </div>
+
+    </header>
+  
+  
+
+    <div class="research"><!--This is used for putting the box in order like row and column-->
+      
+      <div class="items"><!--The box of unique feature -->
+        <h3>Unique Feature of our web page</h3>
+        <img src="../image/research/Unique feature.png" alt="unique feature"><!--adding image -->
+        <p>Our Images pops out when we hover over it and takes the user to the specific collection.</p> 
+      </div>
+
+         <div class="items"><!--use to make box of refernce to put image and text-->
+          <h3>Product page reference </h3>
+          <div class="images " ><!--used to put the image side by side -->
+            <img src="../image/research/product.png" alt="product page"  > 
+            <img src="../image/research/products website ss.png" alt=" webpage product page"  >
+         </div>
+        <p> Design reference taken from  <a href="//www.hublot.com/en-us/watches" target="_blank" style="text-decoration: underline; color: white;"> Hublot Products Page</a>. and out web page screenshot .</p>
+        <!--using a href to add link-->
+      </div>
+     
+
+      <div class="items">
+        <h3>Blog page reference </h3>
+        <div class="images " >
+        <img src="../image/research/blogpage.png" alt=" image"> 
+        <img src="/image/research/blog website ss.png" alt=" webpage blog page"  >
+        </div>
+        <p>Reference from the web page <a href="https://www.ablogtowatch.com/ " target="_blank" style="text-decoration: underline; color: white;">A blog to watch</a> and our web page screenshot . </p>
+      </div>
+      
+      <div class="items">
+        <h3>Home Page</h3>
+        <div class="images " >
+        <img src="../image/research/homepage1.png" alt=" image">
+         <img src="../image/research/home website ss.png" alt=" webpage home page"  >
+        </div>
+        <p>Reference from the web page <a  href="https://www.hublot.com/en-us" target="_blank" style="text-decoration: underline; color: white;">Hublot Home Page</a> and our web page screenshot . </p>
+      </div>
+      
+
+      <div class="items">
+        <h3>About Us</h3>
+        <div class="images " >
+        <img src="../image/research/aboutUs.png" alt=" image" > 
+        <img src="../image/research/aboutUs website ss.png" alt=" webpage aboutUs page"  >
+        </div>
+        <p>Reference from the web page <a href="https://www.audemarspiguet.com/com/en/home.html" target="_blank" style="text-decoration: underline; color: white;">Audemars Piguet</a>. and our web page screenshot .  </p>
+      </div>
+      
+
+      <div class="items">
+        <h3>Color Theme Reference </h3>
+        <div class="images " >
+         <img src="../image/research/apple.png" alt=" image" >
+          <img src="../image/research/home website ss.png" alt=" webpage theme"  >
+        </div>
+        <p>The color theme was taken from <a href="https://www.apple.com/" target="_blank" style="text-decoration: underline; color: white;">Apple</a> and our web page screenshot. </p>
+       </div>
+          
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer style="color:white" >
+      &copy; 2025 Hextick. All rights reserved.
+    </footer>
+
+
+    <style>
+
+     /*css for research page */
+     .research {
+      /* this part is used to make the boxes arrange in rows  */
+      
+      display: flex;
+      flex-wrap: wrap;/* sends the box in another line */
+      
+      gap: 10px;
+      
+    }
+    
+    
+    .items {
+    /*used to make degign of the box*/
+       
+    
+      border-radius: 40px;
+        padding:10px;
+  
+        text-align: center;
+        background-color:black;
+        color: white; }
+
+    a:link { /*used to make a link which has a color at first the change when active , visited, hover */
+    color: white;
+    }
+    
+    a:hover {
+      color: gray;
+    }
+    
+    .items .images {
+      display: flex;/*ensures that the image are side by side */
+      justify-content:center;/*puts the image in centre*/
+      gap: 10px;/*adds gaps */
+      margin-bottom: 10px;/* adds space between the text and image */
+
+    }
+    
+    /*used to place image  width and height of the image*/
+    .items img {
+    max-width: 40%;
+    height: auto;
+    }
+
+    </style>
+    <script src="../js/script.js"></script>
+ 
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta data about the website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Blog Page" name="description">
+    <meta name = "keywords" content = "Blog, Blog Page, Watches">
+    <title>HEXTICK</title> <!-- Displays the title of website on the browser tab. -->
+    <link rel="stylesheet" href="/css/style.css"> <!-- Links an external CSS file for styling. -->
+
+     <style>
+        /* Internal Css */
+        .container {
+            color: white; /* Text color inside the container are wthie. */
+            max-width: 1333px; /* Maximum width of the container. */
+            margin: 20px auto; /* Gives a margin  of 20px top and bottom and 10px left and right and auto automatically sets the left right margin according to container */
+            padding: 10px; /* Used for defining the space between the element and the border of the element */
+            display: flex; /* Creates flexible layouts with elements that you can align and distribute vertically or horizontally */
+            flex-wrap: wrap; /* Sets whether flex items are forced onto same line or can wrap onto multiple lines if they do not fit in same line */
+            gap: 20px; /* Sets 20px on the flex container to create a 20px gap between the adjacent flex items in each row */
+        } 
+
+        .card {
+            flex: 1 1 calc(30% - 10px); /* Flexible sizing for cards making it responsive. */
+            color: white;
+            border: 1px solid white; /* White border around each card. */
+            border-radius: 5px; /* Rounded corners for the cards. */
+            padding: 15px; /* Sets inner spacing within the card. */
+            background-color: black ; /* Sets the background color of the card in black */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations for hover effects. */
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Lifts the cursor selected card slightly up than other cards. */
+        }
+
+        .card img {
+            width: 100%; /* Makes the image cover the full width of the card. */
+            height: auto; /* Elements automatically adjust its height to allow its content to be displayed correctly */
+            border-radius: 5px;  /* Rounds the image corners to match the card. */
+        }
+
+        .card a{
+            color: white;
+        }
+        
+    
+        
+</style>
+</head>
+<body>
+    <header>
+        <!--this is to create a nav bar-->
+        <div class="header">
+            <div class="line"></div> <!--this add a line on the sides of the logo-->
+            <div class="logo">HEXTICK</div>
+            <div class="line"></div>
+
+            <nav class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/HTML/products.html">Products</a>
+                <a href="/HTML/blog.html">Blog</a>
+                <a href="/HTML/research.html">Research</a>
+                <a href="/HTML/aboutUs.html">About Us</a>  
+                <a href="/HTML/form.html">Form</a>    
+            </nav>
+        </div>
+
+    </header>
+
+       <!-- Main container for blog cards -->
+    <div class="container">
+        
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="../image/blog/ai.jpg"> <!-- Blog image -->
+            <h1>Impact of technology on watch industry </h1> <!-- Blog title -->
+            <a href="../HTML/blog1.html">
+            <h4 style="color: white;"><br> <br>With the invention of smartwatches comes endless innovation affecting consumer preferences and how we view the essence of a watch. The technology improves the watches with connectivity, durability or sustainable material; hence, it is function and design. Watches have gone hybrid, attracting trending conversations with smartwatches ever since. Now pulsating with the collision of craftsmanship and technology for a time, almost every watch brand would be interested. Consumers today seek timepieces that not only serve as fashion statements but also seamlessly integrate with their digital lifestyles, offering features that cater to their health, productivity, and convenience needs. This convergence of technology and tradition is driving an exciting new era in the watch industry, where timeless craftsmanship meets modern innovation.
+            </h4> <!-- Blog content description (white text). -->
+            <a href="/HTML/blog1.html">  <u> Read More</u> </a>
+        </a> 
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+         <img src="../image/blog/hybrid.jpg">
+         <a href="../HTML/blog2.html">
+         <br>
+         <h1>Technological advancements with watch design and sales</h1>
+            <h4 style="color: white;"> 
+                Technology is transforming everything from AI-assisted designto blockchain security and e-commerce innovations in aesthetics and functionality. AI-driven customization lets brands offer personalization; advanced materials such as ceramic and titanium enhance durability and sustainability. Blockchain ensures authenticity to fight counterfeiting and facilitates resale markets, while augmented reality enables virtual try-ons, making online shopping even easier. Smartwatches are pushing the envelope in health tracking, genuinely integrating into digital ecosystems and giving real-time peeks at wellness and productivity. As brands continue to embark on their digital transformation, the future of watches will be rooted in perfectly balancing heritage craftsmanship with avant-garde development that keeps timepieces relevant, innovative, and desirable for generations to come. 
+            </h4
+            ><a href="/HTML/blog2.html"><u> Read More</u></a> 
+            
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="../image/blog/3.jpeg">
+            <a href="../HTML/blog3.html">
+            <h1>Revolution in Watch Advertising</h1>
+            <h4 style="color: white;"> <br> The watchmaking industry underwent a sea change in advertisement, transitioning from traditional television and magazine commercials to immersive experiences and influencer marketing. That change reimagined the way brands communicated with buyers, blending heritage with innovation in a quest to target new buyers and become relevant in an emerging digital age. Influencer marketing helped drive that change, with watch companies partnering with horology enthusiasts, lifestyle influencers, and personalities with whom they shared philosophies and values. Those collaborations introduce a level of familiarity and trust, with buyers trusting endorsements from personalities whom they follow and admire. Exclusive releases and co-branded collections with renowned personalities have fueled demand, creating a level of scarcity and buzz for specific watches.</h4>
+            </a>
+            <a href="/HTML/blog3.html"><u>Read More</u></a>
+        </div>
+       
+    </div>
+
+</body>
+
+    <footer style="color:white" > &copy; 2025 HEXTICK. All rights reserved.</footer> <!-- Copyright information. -->
+
+</html>

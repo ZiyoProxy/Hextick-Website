@@ -1,0 +1,266 @@
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #f9f9f9;
+    line-height: 2;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    display: flex; /* this moves the nav bar to to right horizontal of the logo */
+    font-size: 30px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    justify-content: space-between; /* it makes spaece between the logo and nav bar */
+    border-bottom: 2px solid white;
+    align-items: center;
+}
+
+/* the 3 logo, line and text css is for the logo */
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+}
+
+.line {
+    width: 250px;
+    background-color: black;
+    margin: 30px auto;
+    height: 5px ;
+}
+/* the above code is for the line design in the logo */
+
+.text {
+    font: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    padding: 2%;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+    margin-left:auto;
+}
+
+.nav-links a:hover {
+    color: grey;
+}
+
+a:link { 
+    color: black; /* it is used to make a link which has a color at first the change when hovered*/
+}
+    
+a:visited {
+    background-color: white;
+    color:  black;
+}
+    
+
+.heading {
+color: white;
+margin: 0;
+padding: 16px;
+text-align: center;
+}
+
+/* Add some space between the lines/logo and the date/time */
+.date-time {
+    margin-top: 10px;  
+    font-size: 14px;  
+    gap: 15px;
+    color: black; 
+    text-align: center; 
+}
+
+
+
+.watches {
+    padding: 192px 32px; /* it increases the padding to increase the size */
+    text-align: center;
+    background-color: black;
+    color: white;  
+    width: 100%;
+}
+
+
+.container {
+    display: flex; /* Make the container a flex container */
+    gap: 15%; /* Add space between items */
+    justify-content: center; /* Center items horizontally */
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+* {
+    box-sizing: border-box;  /* this makes the content fit within the container */
+}
+
+.item {
+    display: flex;
+    flex-direction: column; /* Stack the image and name vertically */
+    align-items: center; /* Center items inside the flexbox */
+    background-color: black;
+    padding: 15px;
+    max-width: 150px;
+    max-height: 300px;
+    color: black;
+    text-align: center;
+}
+
+.item img {
+    max-width: 500px; /* it will decide the size of the watches */
+    max-height: 400px; /* it will decide the size of the watches */
+    object-fit: fill;
+    border-radius: 5px;
+    margin-bottom: 20px; /* it creates a space between image and text */
+
+    transition: transform 0.3s ease, filter 0.3s ease; /* animation for hover effect */
+}
+
+.item img:hover {
+    transform: scale(1.1); /* it will scale up the image little */
+    filter: brightness(1.2); /*this increases the brightness */
+}
+
+.item h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    white-space: nowrap; /* this makes the names or text in a single line without wrapping */
+}
+
+.category {
+    margin-bottom: 640px; /* makes distance between the categories */
+}
+
+.learn-more-btn {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.learn-more-btn:hover {
+    background-color: grey;
+}
+
+.review-section {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    resize: none;
+}
+
+.submit-review-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 30px;
+    margin-top: 10px;
+    position: relative;
+    font-size: 16px;
+}
+
+.close-btn {
+        display: block; /* this make it a block element for centering */
+        background-color: black;
+        color: white;
+        padding: 10px 210px;
+        border: none;
+        cursor: pointer;
+        font-size: 12px;
+        border-radius: 5px;
+        margin-top: 10px;
+        position: relative;
+        font-size: 17px;
+        text-align: center;
+}
+
+.watch-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-item {
+    text-align: center;
+    position: relative; /* thus will put the popup to the container */
+}
+
+.popup-box {
+    display: none; 
+    position: absolute;
+    top: 0; /* this will position the popup below the watch */
+    left: 100%;
+    transform: translateX(-60%);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border: 1px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    z-index: 100;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.popup-box .add-to-cart-btn {
+    display:block;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none; /* this removes the underline below the name in collection */
+}
+
+footer {
+background-color:black;
+padding:10px;
+text-align: center;
+width: 100%;
+border-top: 1px solid white;
+margin-top: auto;
+
+}
+
+
